@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string.h>
+#include "Celula.h"
+
+using namespace std;
+
+class ListaLigada {
+	
+	//= privado
+	private:
+	Celula * prim;
+	Celula * ult;
+	int qtdCelulas;
+	
+	//= publico
+	public:
+	ListaLigada();
+	bool vazia();
+	int tamanho();
+	int primeiro();
+	int ultimo();
+	void insereInicio(int i);
+  void insereFinal(int i);
+	string insereEmN(Celula * c, int pos);
+  string insereAposN(Celula * c, int pos);
+  string insereAntesN(Celula *c, int pos);
+  string excluiEmN(int pos);
+  string excluiAposN(int pos);
+  string excluiAntesN(int pos);
+	void imprime();
+	// ... outros metodos ...
+	
+};
