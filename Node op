@@ -1,0 +1,32 @@
+#include <cstdlib>
+#include "Celula.h"
+
+Celula::Celula(int i) {
+	info =  i;
+	prox = NULL;
+	ant = NULL;
+}
+
+int Celula::getInfo() {
+	return info;
+}
+
+void Celula::setInfo(int i) {
+	info = i;
+}
+
+Celula * Celula::getProx() {
+	return prox;
+}
+
+Celula * Celula::getAnt() {
+	return ant;
+}
+
+void Celula::setProx(Celula * p) {
+	prox = p;
+}
+
+void Celula::setAnt(Celula * p) {
+	ant = p;
+}
